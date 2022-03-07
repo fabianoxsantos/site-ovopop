@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
 
-* {
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -25,77 +25,127 @@ body {
 
 header {
     width: 100vw;
-    height: 95vh;
-    background-image: url(/images/img-header.png);         
-   
+    height: 100vh;
+    background-color: var(--corAmarelo);
+    background-image: url(../images/img-principal.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+       
 }
-
-.container{
-                 
-                
-}
-
+           
+               
 .logo{
+    height: 10vw;
+    margin-top: 30px;
+    margin-left: 80px;
   
     
-}
-
-.ovo1 {
-  
-    
-}
-
-.ovo2{
-    
-    
-
 }
 
 h1{
-    
-    font-size: 10em;
+    font-size: 7em;
     font-weight: 500;
     line-height: 1.0em;
-    margin-left: 70px;
-    margin-top: 20px;
-    color: var(--corLaranja);
-
-
+    
 }
+
 h2{
     font-size: 2em;
     font-weight: 500;
     line-height: 1.0em;
-    margin-left: 70px;
-    margin-top: 20px;
-    color: var(--corLaranja);
-    
-
+    color: var(--corBranca);
+  
 }
 
 h3{
     font-size: 2em;
     font-weight: 200;
-    line-height: 1.0em;
-    margin-left: 70px;
-    margin-top: 20px;
     color: var(--corLaranja);
 
+}
 
+h4{
+    font-size: 1.6em;
+    font-weight: 400;
+    color: var(--corBranca);
+
+}
+
+h5{
+    font-size: 1.5em;
+    font-weight: 300;
+    color: var(--corBranca);
+
+}
+
+.titulo-principal{
+    width: 70vw;
+    margin-left: 90px;
+    margin-top: 50px;
+    color: var(--corLaranja);
+}
+
+.subtitulo-principal{
+    margin-left: 90px;
+    color: var(--corLaranja);
+
+}
 
 .tarja{
-    width: 100vw;
-    height: 50px;
     background-color: var(--corAzul);
     display: flex;
+    justify-content: center;
+
+}
+
+.itens-tarja{
+    width: 70vw;
+    height: 60px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+   
+}
+
+.loja{
+    width: 100vw;
+    background-color: var(--corLaranja);
+    display: flex;
+    justify-content: center;
+
+}
+
+.galeria-loja{
+    width: 80vw;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
     
 }
 
-.enderecos{
+.img-loja{
+    margin: 10px;
 
 }
+    
+.enderecos {
+    background-color: var(--corLaranja);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    
+       
+}
 
-.receitas{
+.receita{
+    width: 100vw;
+    height: 500px;
+    background-color: var(--corCreme);
+    text-align: center;
 
 }
 
