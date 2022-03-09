@@ -24,16 +24,7 @@ body {
     font-family: var(--font-padrao);
 }
 
-header {
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--corAmarelo);
-    background-image: url(../images/img-principal.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-       
-}
-           
+        
                
 .logo{
     height: 10vw;
@@ -65,6 +56,10 @@ h2{
     color: var(--corAzul);
     
   
+}
+
+.cor-laranja {
+    color: var(--corLaranja);
 }
 
 h3{
@@ -100,8 +95,21 @@ h6{
 
 }
 
+header {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--corAmarelo);
+    background-image: url(../images/img-principal.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+       
+}
+
 .titulo-principal{
-    width: 70vw;
+    width: 85vw;
     margin-left: 90px;
     margin-top: 50px;
     color: var(--corLaranja);
@@ -165,7 +173,7 @@ h6{
 
 .tamanhos {
     width: 100vw;
-    height: 700px;
+    height: 800px;
     padding-top: 80px;
     background-color: var(--corAmarelo);
     color: var(--corLaranja);
@@ -185,7 +193,7 @@ h6{
     justify-content: space-evenly;
     align-items: flex-end;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 80px;
 }
 
 .jumbo{
@@ -201,6 +209,10 @@ h6{
 .grande{
     height: 250px;
     margin-bottom: 20px;
+}
+
+.texto-ovos {
+    width: 60vw;
 }
 
 
