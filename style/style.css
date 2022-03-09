@@ -57,6 +57,15 @@ h2{
   
 }
 
+.h2-positivo{
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 1.0em;
+    color: var(--corAzul);
+    
+  
+}
+
 h3{
     font-size: 2em;
     font-weight: 200;
@@ -71,8 +80,20 @@ h4{
 
 }
 
+.h4-positivo {
+    color: var(--corLaranja);
+
+}
+
 h5{
     font-size: 1.5em;
+    font-weight: 300;
+    color: var(--corBranca);
+
+}
+
+h6{
+    font-size: 1.1em;
     font-weight: 300;
     color: var(--corBranca);
 
@@ -95,15 +116,17 @@ h5{
     background-color: var(--corAzul);
     display: flex;
     justify-content: center;
+    
 
 }
 
 .itens-tarja{
     width: 70vw;
-    height: 60px;
+    height: 80px;
     display: flex;
     justify-content:space-between ;
     align-items: center;
+    flex-wrap: wrap;
    
 }
 
@@ -118,7 +141,7 @@ h5{
 .galeria-loja{
     width: 80vw;
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -137,35 +160,146 @@ h5{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     
        
 }
 
 .receita{
     width: 100vw;
-    height: 500px;
     background-color: var(--corCreme);
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    
 
 }
 
-.banner {
+.galeria-receitas{
+    width: 100vw;
+    margin-bottom: 30px;    
+    padding-top: 80px;
+    
+}
+
+.galeria-receitas > img{
+    margin: 10px;
+}
+
+.banner > img{
+    width: 100vw;
+    margin-bottom: -5px;
+        
 
 }
 
 .tamanhos {
+    width: 100vw;
+    height: 700px;
+    padding-top: 80px;
+    background-color: var(--corAmarelo);
+    color: var(--corLaranja);
+    text-align: center;
+    display: flex;
+    justify-content: first baseline;
+    flex-direction: column;
+    align-items: center;
 
 }
+
+
+
+.tipos{
+    width: 70vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.jumbo{
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.extra {
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.grande{
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+
+
 
 .instagram {
-   
+    width: 100vw;
+    height: 700px;
+    background-color: var(--corCreme);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    
 }
 
-.texto {
+.texto-insta{
+    padding-top: 80px;
+    text-align: center;
+    
+}
+
+.galeria-instagram{
+    width: 80vw;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+
+.img-insta{
+    margin: 10px;
 
 }
 
-.
+footer {
+    width: 100vw;
+    height: 400px;
+    background-color: var(--corAzul);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+footer > h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+button {
+    
+    background-color: var(--corLaranja);
+    border: 1px solid var(--corLaranja );
+    border-radius: 50px;
+    font-family: var(--font-padrao);
+    font-weight: 300;
+    font-size: 1.4em;
+    color: var(--corBranca);
+    padding:  20px 80px;
+    margin-bottom: 150px;
+}
+
+
 
 
