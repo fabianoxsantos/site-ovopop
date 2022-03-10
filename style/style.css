@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -26,16 +26,7 @@ body {
 
         
                
-.logo{
-    height: 10vw;
-    margin-top: 30px;
-    margin-left: 80px;
-  
-    
-}
-
 h1{
-    font-size: 7em;
     font-weight: 500;
     line-height: 1.0em;
     
@@ -45,6 +36,7 @@ h2{
     font-size: 2em;
     font-weight: 500;
     line-height: 1.0em;
+    line-height: 1.2em;
     color: var(--corBranca);
   
 }
@@ -52,8 +44,8 @@ h2{
 .h2-positivo{
     font-size: 2em;
     font-weight: 500;
-    line-height: 1.0em;
-    color: var(--corAzul);
+    line-height: 1.2em;
+    color: var(--corLaranja);
     
   
 }
@@ -66,6 +58,13 @@ h3{
     font-size: 2em;
     font-weight: 200;
     color: var(--corLaranja);
+
+}
+
+.h3-negativo{
+    font-size: 2em;
+    font-weight: 200;
+    color: var(--corBranca);
 
 }
 
@@ -95,28 +94,45 @@ h6{
 
 }
 
+p{
+    font-family: var(--font-padrao);
+    font-size: 1.3em;
+    font-weight: 300;
+
+}
+
 header {
     width: 100vw;
-    height: 100vh;
+    min-height: 90vh;
     background-color: var(--corAmarelo);
     background-image: url(../images/img-principal.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    background-size: contain;  
+}
+
+.logo{
+    max-width: 20vw;
+    padding-top: 30px;
+    padding-left: 30px;
+
+}
+
+.principal {
+    padding: 60px 50px 50px 50px ;
+    width: 80vw;
        
 }
 
 .titulo-principal{
-    width: 85vw;
-    margin-left: 90px;
-    margin-top: 50px;
+    font-size: 2.0em;
+    margin-bottom: 20px;
+
     color: var(--corLaranja);
 }
 
 .subtitulo-principal{
-    margin-left: 90px;
+    font-size: 1.8em;
+
     color: var(--corLaranja);
 
 }
@@ -124,18 +140,31 @@ header {
 .tarja{
     background-color: var(--corAzul);
     display: flex;
-    justify-content: center;
-    
+    align-items: center;
+    justify-content: space-evenly;
 
 }
 
+.ovo-tarja{
+    max-width: 6.0vw;
+    max-height: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
 .itens-tarja{
-    width: 70vw;
-    height: 80px;
+    background-color: var(--corAzul);
+    max-width: 70vw;
+    max-height: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
-    justify-content:space-between ;
-    align-items: center;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    word-spacing: 50px;
+    
    
 }
 
@@ -156,13 +185,26 @@ header {
 .galeria-receitas{
     width: 100vw;
     margin-bottom: 30px;    
-    padding-top: 80px;
+    padding-top: 30px;
     
 }
 
 .galeria-receitas > img{
     margin: 10px;
 }
+
+.texto-receitas{
+   width: 90vw;
+   padding-left: 50px;
+   padding-right: 50px;
+   margin-top: 60px;
+}
+
+.texto-receitas > h3{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
 
 .banner > img{
     width: 100vw;
@@ -173,13 +215,13 @@ header {
 
 .tamanhos {
     width: 100vw;
-    height: 800px;
     padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px ;
     background-color: var(--corAmarelo);
     color: var(--corLaranja);
     text-align: center;
     display: flex;
-    justify-content: first baseline;
     flex-direction: column;
     align-items: center;
 
@@ -189,9 +231,12 @@ header {
 
 .tipos{
     width: 70vw;
+    background-color: var(--corAmarelo);
+
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
+    flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 80px;
 }
@@ -204,15 +249,19 @@ header {
 .extra {
     height: 300px;
     margin-bottom: 20px;
+    margin-top: 30px;
+
 }
 
 .grande{
     height: 250px;
     margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .texto-ovos {
-    width: 60vw;
+    width: 70vw;
+    margin-top: 20px;
 }
 
 
@@ -220,7 +269,6 @@ header {
 
 .instagram {
     width: 100vw;
-    height: 700px;
     background-color: var(--corCreme);
     display: flex;
     flex-direction: column;
@@ -228,16 +276,27 @@ header {
    
 }
 
-.texto-insta{
+.texto-insta {
+    width: 70vw;
     padding-top: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.texto-insta > h3{
+    padding-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
     text-align: center;
     
 }
 
 .galeria-instagram{
     width: 80vw;
-    margin-top: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -254,29 +313,44 @@ header {
 .loja{
     width: 100vw;
     background-color: var(--corAzul);
-    display: flex;
-    justify-content: center;
+    
 
 }
 
-.galeria-loja{
-    width: 80vw;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    padding-right: 25px;
-    padding-left: 30px;
+.texto-loja{
+    width: 100vw;
+    background-color: var(--corAzul); 
+    margin: auto;       
+ }
+
+ .texto-loja-itens{
+    width: 70vw;
+    padding-top: 50px;
+    text-align: center;
+    margin: auto; 
+
+ }
+
+ .texto-loja-itens > h2{
+   margin-bottom: 30px;
+ }
+
+.galeria-lojas{
+    width: 100vw;
+    background-color: var(--corAzul);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    
-    
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.img-loja{
-    margin: 10px;
-
+.galeria-lojas > img {
+max-width: 500px;    
+padding: 10px;
 }
+
     
 .enderecos {
     background-color: var(--corAzul);
@@ -291,7 +365,6 @@ header {
 
 footer {
     width: 100vw;
-    height: 400px;
     background-color: var(--corLaranja);
     display: flex;
     flex-direction: column;
@@ -300,20 +373,24 @@ footer {
 }
 
 footer > h2{
+    text-align: center;
     margin-top: 80px;
     margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+
 }
 
 .botao {
     
-    background-color: var(--corAmarelo);
-    border: 1px solid var(--corLaranja );
+    background-color: forestgreen;
+    border: 2px solid var(--corBranca );
     border-radius: 50px;
     font-family: var(--font-padrao);
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.5em;
-    color: var(--corLaranja);
-    padding:  20px 80px;
+    color: var(--corBranca);
+    padding:  20px 50px;
     margin-bottom: 100px;
     
   
