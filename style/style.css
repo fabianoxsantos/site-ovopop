@@ -110,6 +110,18 @@ header {
     background-size: contain;  
 }
 
+.social{
+    display: flex;
+    width: 80vw;
+    height: 30px;
+    justify-content: end;
+    padding-top: 20px;
+}
+
+.img-social{
+    margin-right: 10px;
+}
+
 .logo{
     max-width: 20vw;
     padding-top: 30px;
@@ -124,9 +136,9 @@ header {
 }
 
 .titulo-principal{
+    width: 500px;
     font-size: 2.0em;
     margin-bottom: 20px;
-
     color: var(--corLaranja);
 }
 
@@ -393,9 +405,15 @@ footer > h2{
     padding:  20px 50px;
     margin-bottom: 100px;
     
-  
-    
 }
+
+
+.botao:hover {
+    
+    background-color: rgb(27, 107, 27);
+        
+}
+
 
 .linha-direitos {
     width: 100vw;
