@@ -15,6 +15,7 @@
     --corLaranja:   #F05A22;
     --corAmarelo:   #ffbb00;
     --corAzul:      #11C2C6;
+    --corAzulClaro: #7decee;
     --corMarrom:    #683900;
     --corCreme:     #fff7c4;
     --corBranca:    #ffffff;
@@ -94,7 +95,7 @@ h6{
 
 }
 
-p{
+p {
     font-family: var(--font-padrao);
     font-size: 1.3em;
     font-weight: 300;
@@ -105,17 +106,31 @@ header {
     width: 100vw;
     min-height: 90vh;
     background-color: var(--corAmarelo);
-    background-image: url(../images/img-principal.png);
-    background-repeat: no-repeat;
-    background-size: contain;  
+    
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;    
+    height: 100%;
+}
+
+.main-image{
+
+}
+
 
 .social{
     display: flex;
-    width: 80vw;
-    height: 30px;
+    width: 70vw;
     justify-content: end;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .img-social{
@@ -123,15 +138,15 @@ header {
 }
 
 .logo{
-    max-width: 20vw;
-    padding-top: 30px;
-    padding-left: 30px;
+    max-width: 130px;
+    padding-top: 10px;
+    padding-left: 20px;
 
 }
 
 .principal {
-    padding: 60px 50px 50px 50px ;
-    width: 80vw;
+    padding: 60px 50px 0px 50px ;
+    width: 50vw;
        
 }
 
